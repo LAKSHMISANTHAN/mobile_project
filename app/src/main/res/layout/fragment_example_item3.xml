@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExampleItem2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/Relative">
+
+        <TextView
+            android:id="@+id/textIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In Time : "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textIn"
+            android:text="Out Time:"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textInDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textOut"
+            android:layout_marginTop="10dp"
+            android:text="In Time Date: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textOutDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInDate"
+            android:layout_marginTop="10dp"
+            android:text="Out Time Date: "
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/okButton1"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OK"
+            android:layout_below="@+id/textOutDate"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameWard1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"></FrameLayout>
+
+</FrameLayout>

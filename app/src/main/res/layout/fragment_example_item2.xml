@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExampleItem2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/Relative">
+
+        <TextView
+            android:id="@+id/textreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration number : "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textreg"
+            android:text="Out Time:"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textOut"
+            android:layout_marginTop="10dp"
+            android:text="In Time : Not came yet!!!!"
+            android:textSize="25sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/download"
+            android:text="View_Image"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/okButton"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/download"
+            android:layout_centerInParent="true"
+            android:id = "@+id/imageView"/>
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OK" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameWard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"></FrameLayout>
+
+</FrameLayout>
